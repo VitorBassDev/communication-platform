@@ -1,8 +1,22 @@
+// CONFIGURAÇÃO DO BANCO DE DADOS UTILIZADO - SQLITE 
+// APONTAMENTO DO LOCAL ONDE O ARQUIVO DO BANCO DE DADOS SERÁ GRAVADO
+
 datasource db {
   provider = "sqlite"
-  url      = "file:./dev.db
+  url      = "file:./dev.db"
 }
 
 generator client {
   provider = "prisma-client-js"
+}
+
+// MIGRATIONS CREATE-USER (comando:npx prisma migrate dev)
+model User {
+  id          String @id @default(uuid())
+  name        String
+  github_id   Int
+  avalar_url  String
+  login       String
+
+  @@map("users")
 }
