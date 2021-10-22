@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    /* Projects */
+
+    /* Language and Environment */
+    "target": "es2017", 
+
+    /* Modules */
+    "module": "commonjs",                                
+   
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+
+    /* Type Checking */
+    "strict": false,                                     
+    /* Completeness */
+    // "skipDefaultLibCheck": true,
+    "skipLibCheck": true           
+  }
+}
